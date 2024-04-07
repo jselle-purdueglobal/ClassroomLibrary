@@ -1,0 +1,18 @@
+@LibraryAPI_HostAddress = http://localhost:5218/api
+
+GET {{LibraryAPI_HostAddress}}/Books
+Accept: application/json
+
+###
+
+GET {{LibraryAPI_HostAddress}}/Auth/authenticate
+Content-Type: application/json
+
+"0717"
+
+###
+
+PUT {{LibraryAPI_HostAddress}}/Auth/update
+Content-Type: application/json
+
+"5678"

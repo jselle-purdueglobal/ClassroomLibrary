@@ -1,0 +1,208 @@
+I have provided my Books table with two columns: BookID and Author with a list of author lastnames and firstnames, with multiple authors separated by a semicolon. I have also provided an Authors table of three columns: AuthorID, Firstname, and Lastname. Replace the Author names with their respective ID numbers. Then, create a two column table. The first column should have a BookID header and the second should have a AuthorID header. Please place them in an actual table so they are easy to copy and paste to a spreadsheet application.
+
+<Books>
+357	Fabbretti, Valerio
+359	Christy, Jana
+360	de Groat, Diane
+361	Roper, Bob
+363	Griffith, Gershom
+364	del Sur, Duendes
+366	Horowitz, Dave
+367	Rešček, Sanja
+368	Mata, Nina
+369	Stroud, Virginia A.
+370	Blackall, Sophia
+371	Sweat, Lynn
+372	Banta, Susan
+374	Björkman, Steve
+375	Min, Ken
+376	Cairns, Julia
+378	Barton, Patrice
+379	Dunn, Robert
+380	Banta, Susan
+381	Lee, Jared
+382	Seibold, J. Otto
+383	Ebbeler, Jeffrey
+384	Sarkar, Anjan
+386	Wolf, Bruce
+387	Kellogg, Steven
+389	Tusa, Tricia
+395	Howard, Kim
+396	Walker, Tracy
+397	Silveria, Gordon
+399	Mackain, Bonnie
+402	Degen, Bruce
+403	Degen, Bruce
+404	Hammond, Ted
+405	Lewis, Stevie
+406	Moroney, Christopher; Gerardi, Jan
+407	Bassani, Srimalie
+408	Degen, Bruce
+411	Degen, Bruce
+412	Degen, Bruce
+413	Speirs, Joan
+414	Degen, Bruce
+416	Graham Hale, James
+419	Bolster, Rob
+423	Gordon-Harris, Tory
+425	Scott, Peter
+429	Barrett, Peter
+430	Bolster, Rob
+436	Moffatt, Judith
+437	Bolster, Rob
+439	Boller, Gary
+441	Bridges, Greg
+445	Gabriel, Andrea
+448	Degen, Bruce
+449	Degen, Bruce
+450	Degen, Bruce
+451	Degen, Bruce
+452	Degen, Bruce
+455	Jenkins, Steve
+456	Larus, Edizioni
+461	Bolster, Rob
+462	Bolster, Rob
+464	Degen, Bruce
+465	Degen, Bruce
+466	Freem, Elroy
+468	Taback, Simms
+470	Ayliffe, Alex
+472	Doolittle, Michael J.
+473	Everett Fisher, Leonard
+479	Olliffe, Pat
+488	Salley Palmer, Kate
+489	Aburto, Jesus
+490	Sandoval, Gerardo
+491	Weber, Jill
+492	Wood, Katie
+493	Shepperson, Rob
+494	Tiffany, Sean
+495	Peck, Beth
+496	Rood, Brian
+497	Coudenys, Lieven
+499	Wick, Walter
+500	Wick, Walter
+501	Wick, Walter
+502	Scheuer, Lauren
+503	Dillon, Diane; Dillon, Leo
+504	Escrivá, Viví
+505	Lobel, Arnold
+506	Copeland, Gregory
+513	Garnett, Ron
+515	Byrd, Samuel
+517	Copeland, Gregory
+518	Gutierrez, Manuel
+519	Copeland, Gregory
+520	O'Brien, John
+521	Gutierrez, Manuel
+522	Rogers, Jacqueline
+524	Ford, Gilbert
+525	Copeland, Gregory
+527	Garland, Sally
+528	Eliopoulos, Christopher
+529	Pinkney, Brian
+530	Parra, John
+531	Larkin, Eric-Shabazz
+533	Covington, Neverne
+534	Ford, George
+535	Zunon, Elizabeth
+536	Wicks, Maris
+537	O'Brien, John
+538	Hinderliter, John
+539	O'Brien, John
+540	Eagle, Michael
+541	Blackall, Sophie
+544	van Frankenbuyzen, Gijsbert
+</Books>
+
+<Illustrators>
+137	Fabbretti	Valerio
+138	Christy	Jana
+139	de Groat	Diane
+140	Roper	Bob
+141	Griffith	Gershom
+142	del Sur	Duendes
+143	Horowitz	Dave
+144	Rešcek	Sanja
+145	Mata	Nina
+146	Stroud	Virginia
+147	Blackall	Sophia
+148	Sweat	Lynn
+149	Banta	Susan
+150	Björkman	Steve
+151	Min	Ken
+152	Cairns	Julia
+153	Barton	Patrice
+154	Dunn	Robert
+155	Lee	Jared
+156	Seibold	J.
+157	Ebbeler	Jeffrey
+158	Sarkar	Anjan
+159	Wolf	Bruce
+160	Kellogg	Steven
+161	Tusa	Tricia
+162	Howard	Kim
+163	Walker	Tracy
+164	Silveria	Gordon
+165	Mackain	Bonnie
+166	Degen	Bruce
+167	Hammond	Ted
+168	Lewis	Stevie
+169	Moroney	Christopher
+170	Gerardi	Jan
+171	Bassani	Srimalie
+172	Speirs	Joan
+173	Graham Hale	James
+174	Bolster	Rob
+175	Gordon-Harris	Tory
+176	Scott	Peter
+177	Barrett	Peter
+178	Moffatt	Judith
+179	Boller	Gary
+180	Bridges	Greg
+181	Gabriel	Andrea
+182	Jenkins	Steve
+183	Larus	Edizioni
+184	Freem	Elroy
+185	Taback	Simms
+186	Ayliffe	Alex
+187	Doolittle	Michael
+188	Everett Fisher	Leonard
+189	Olliffe	Pat
+190	Salley Palmer	Kate
+191	Aburto	Jesus
+192	Sandoval	Gerardo
+193	Weber	Jill
+194	Wood	Katie
+195	Shepperson	Rob
+196	Tiffany	Sean
+197	Peck	Beth
+198	Rood	Brian
+199	Coudenys	Lieven
+200	Wick	Walter
+201	Scheuer	Lauren
+202	Dillon	Diane
+203	Dillon	Leo
+204	Escrivá	Viví
+205	Lobel	Arnold
+206	Copeland	Gregory
+207	Garnett	Ron
+208	Byrd	Samuel
+209	Gutierrez	Manuel
+210	O'Brien	John
+211	Rogers	Jacqueline
+212	Ford	Gilbert
+213	Garland	Sally
+214	Eliopoulos	Christopher
+215	Pinkney	Brian
+216	Parra	John
+217	Larkin	Eric-Shabazz
+218	Covington	Neverne
+219	Ford	George
+220	Zunon	Elizabeth
+221	Wicks	Maris
+222	Hinderliter	John
+223	Eagle	Michael
+224	Blackall	Sophie
+225	van Frankenbuyzen	Gijsbert
+</Illustrators>

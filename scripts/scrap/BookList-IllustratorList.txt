@@ -1,0 +1,1141 @@
+<BookList>
+BookID	Illustrator
+1	Natti, Susanna
+2	Natti, Susanna
+3	Natti, Susanna
+4	Natti, Susanna
+5	Natti, Susanna
+6	Natti, Susanna
+7	
+8	
+9	
+10	Kaban, Eda
+11	Durand, Delphine
+12	Biggs, Brian
+13	Biggs, Brian
+14	Castelao, Patricia
+15	
+16	
+17	
+18	Gibson, Jessica
+19	
+20	
+21	
+22	
+23	Peterson, Ingela
+24	
+25	Bowers, Tim
+26	Clark, David
+27	Barrett, Ron
+28	Barrett, Ron
+29	
+30	
+31	
+32	Jones, Noah Z.
+33	Casale, Paul
+34	
+35	Holgate, Douglas
+36	Holgate, Douglas
+37	Qualls, Sean; Alko, Selina
+38	Kiernan, Kenny
+39	
+40	
+41	
+42	
+43	McCue, Lisa
+44	Kennedy, Kelly
+45	Harrison, Vashti
+46	
+47	Tuya, Jez
+48	Clanton, Ben
+49	Clanton, Ben
+50	Rogers, Jacqueline
+51	
+52	
+53	
+54	
+55	Burris, Priscilla
+56	Burris, Priscilla
+57	Burris, Priscilla
+58	Burris, Priscilla
+59	Fisher, Cynthia
+60	Rand, Ted
+61	Harms Maione, Heather
+62	Lewin, Betsy
+63	van Lieshout, Maria
+64	
+65	
+66	
+67	
+68	Gurney, John Steven
+69	Gurney, John Steven
+70	Gurney, John Steven
+71	Blake, Quentin
+72	Smith, Lane
+73	Love, Judy
+74	Robinson, Christian
+75	Long, Loren
+76	
+77	
+78	
+79	
+80	
+81	
+82	
+83	
+84	Aikins, Dave
+85	
+86	
+87	
+88	Pham, LeUyen
+89	
+90	
+91	Scheffler, Axel
+92	Scheffler, Axel
+93	Kleven, Elisa
+94	Gutierrez, Rudy
+95	
+96	Echeverri, Catalina
+97	
+98	
+99	Hargreaves, Adam
+100	Lapadula, Tom
+101	Tong, Andie
+102	Vuković, Elizabet
+103	King Moreno, René
+104	Stead, Erin E.
+105	Alley, R. W.
+106	
+107	
+108	
+109	
+110	
+111	Soun Ratanavanh, Seng
+112	
+113	
+114	Gerberg, Mort
+115	
+116	Britt, Stephanie
+117	Davis, Rich
+118	
+119	
+120	Palen, Debbie
+121	Raglin, Tim
+122	Mathieu, Joe
+123	
+124	
+125	Wheeler, Jody
+126	
+127	
+128	
+129	
+130	
+131	Pak, Kenard
+132	
+133	Ransome, James E.
+134	Walrod, Mike
+135	
+136	
+137	
+138	
+139	
+140	
+141	Spaziante, Patrick
+142	Soman, David
+143	de Paola, Tomie
+144	
+145	Ellis, Christina
+146	
+147	
+148	
+149	
+150	Karlin, Nurit
+151	
+152	
+153	
+154	
+155	Wang, Sean
+156	
+157	
+158	
+159	
+160	
+161	O'Connor, George
+162	Pocock, Rita
+163	
+164	Johnson, Crockett
+165	Cis, Valeria
+166	
+167	White, David
+168	
+169	
+170	Wilhelm, Hans
+171	Morgan, Pierr
+172	
+173	Dean, James
+174	Dean, James
+175	Dean, James
+176	
+177	
+178	Pham, LeUyen
+179	Catrow, David
+180	
+181	
+182	Farina, Katy
+183	Ehlert, Lois
+184	
+185	
+186	
+187	Hocking, Deborah
+188	McIntosh, Iain
+189	Reynolds, Peter H.
+190	Vuković, Elizabet
+191	Karas, G. Brian
+192	Lloyd, Gita; Binder, Eric
+193	
+194	
+195	
+196	
+197	Parker-Rees, Guy
+198	Garza, Fabiola
+199	
+200	Watson, Jesse Joseph
+201	
+202	Bond, Felicia
+203	Bond, Felicia
+204	Wakefield, Scott
+205	Sonke, Sandie
+206	Demarest, Chris
+207	Hartung, Susan Kathleen
+208	Moser, Barry
+209	Brunkus, Denise
+210	Brunkus, Denise
+211	Brunkus, Denise
+212	Brunkus, Denise
+213	Brunkus, Denise
+214	Brunkus, Denise
+215	Brunkus, Denise
+216	Brunkus, Denise
+217	Brunkus, Denise
+218	Brunkus, Denise
+219	Brunkus, Denise
+220	Brunkus, Denise
+221	Brunkus, Denise
+222	Brunkus, Denise
+223	
+224	
+225	
+226	
+227	
+228	Kaufman, Suzanne
+229	Frazee, Marla
+230	
+231	
+232	
+233	
+234	Casilla, Robert
+235	
+236	
+237	
+238	
+239	Murdocca, Sal
+240	Matthews, Kelly; Matthews, Nichole
+241	Matthews, Kelly; Matthews, Nichole
+242	Matthews, Kelly; Matthews, Nichole
+243	Matthews, Kelly; Matthews, Nichole
+244	Murdocca, Sal
+245	Murdocca, Sal
+246	Murdocca, Sal
+247	Murdocca, Sal
+248	Peña, Zeke
+249	
+250	
+251	Robinson, Christian
+252	
+253	
+254	
+255	
+256	
+257	Iwai, Melissa
+258	
+259	McCully, Emily
+260	
+261	Stevenson, Suçie
+262	Stevenson, Suçie
+263	Stevenson, Suçie
+264	Teague, Mark
+265	Stevenson, Suçie
+266	Stevenson, Suçie
+267	
+268	
+269	Brinckloe, Julie
+270	Kim, Jaime
+271	
+272	
+273	Gordon, Steven E.
+274	
+275	Smith, Lane
+276	Smith, Lane
+277	
+278	Prabhat, Sandhya
+279	Mai-Wyss, Tatjana
+280	Lasker, Joe
+281	Swarner, Kristina
+282	Helquist, Brett
+283	Helquist, Brett
+284	Helquist, Brett
+285	
+286	Wilsdorf, Anne
+287	Limited, Dynamo
+288	
+289	
+290	
+291	
+292	Laughead, Mike
+293	Ho, Jannie
+294	Dawson, Scott
+295	Dawson, Scott
+296	Dawson, Scott
+297	
+298	
+299	
+300	Lee, Jared
+301	Lee, Jared
+302	
+303	Semeiks, Val
+304	Morrison, Frank
+305	
+306	Johansen Newman, Barbara
+307	Montijo, Rhode
+308	Jorisch, Stéphane
+309	
+310	
+311	
+312	
+313	Preiss Glasser, Robin
+314	Keats, Ezra Jack
+315	Elkerton, Andy
+316	Elkerton, Andy
+317	
+318	Abbot, Judi
+319	Mata, Nina
+320	
+321	
+322	
+323	Weston, Martha
+324	Simont, Marc
+325	Simont, Marc
+326	
+327	Meltzer, Jessica
+328	
+329	Williams, Garth
+330	Williams, Garth
+331	
+332	Brooks, Ron
+333	
+334	
+335	
+336	
+337	
+338	
+339	
+340	
+341	
+342	
+343	
+344	
+345	Williams, Garth
+346	López, Rafael
+347	Besom, Mae
+348	Besom, Mae
+349	Byard, Carole
+350	Teague, Mark
+351	
+352	Bobo, Keturah A.
+353	Brown, Richard
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</BookList>
+
+<IllustratorList>
+1	Susanna	Natti
+2	Eda	Kaban
+3	Delphine	Durand
+4	Brian	Biggs
+5	Patricia	Castelao
+6	Jessica	Gibson
+7	Ingela	Peterson
+8	Tim	Bowers
+9	David	Clark
+10	Ron	Barrett
+11	Noah Z.	Jones
+12	Paul	Casale
+13	Douglas	Holgate
+14	Sean	Qualls
+15	Selina	Alko
+16	Kenny	Kiernan
+17	Lisa	McCue
+18	Kelly	Kennedy
+19	Vashti	Harrison
+20	Jez	Tuya
+21	Ben	Clanton
+22	Jacqueline	Rogers
+23	Priscilla	Burris
+24	Cynthia	Fisher
+25	Ted	Rand
+26	Heather	Harms Maione
+27	Betsy	Lewin
+28	Maria	van Lieshout
+29	John Steven	Gurney
+30	Quentin	Blake
+31	Lane	Smith
+32	Judy	Love
+33	Christian	Robinson
+34	Loren	Long
+35	Dave	Aikins
+36	LeUyen	Pham
+37	Axel	Scheffler
+38	Elisa	Kleven
+39	Rudy	Gutierrez
+40	Catalina	Echeverri
+41	Adam	Hargreaves
+42	Tom	Lapadula
+43	Andie	Tong
+44	Elizabet	Vukovic
+45	René	King Moreno
+46	Erin E.	Stead
+47	R. W.	Alley
+48	Seng	Soun Ratanavanh
+49	Mort	Gerberg
+50	Stephanie	Britt
+51	Rich	Davis
+52	Debbie	Palen
+53	Tim	Raglin
+54	Joe	Mathieu
+55	Jody	Wheeler
+56	Kenard	Pak
+57	James E.	Ransome
+58	Mike	Walrod
+59	Patrick	Spaziante
+60	David	Soman
+61	Tomie	de Paola
+62	Christina	Ellis
+63	Nurit	Karlin
+64	Sean	Wang
+65	George	O'Connor
+66	Rita	Pocock
+67	Crockett	Johnson
+68	Valeria	Cis
+69	David	White
+70	Hans	Wilhelm
+71	Pierr	Morgan
+72	James	Dean
+73	David	Catrow
+74	Katy	Farina
+75	Lois	Ehlert
+76	Deborah	Hocking
+77	Iain	McIntosh
+78	Peter H.	Reynolds
+79	G. Brian	Karas
+80	Gita	Lloyd
+81	Eric	Binder
+82	Guy	Parker-Rees
+83	Fabiola	Garza
+84	Jesse Joseph	Watson
+85	Felicia	Bond
+86	Scott	Wakefield
+87	Sandie	Sonke
+88	Chris	Demarest
+89	Susan Kathleen	Hartung
+90	Barry	Moser
+91	Denise	Brunkus
+92	Suzanne	Kaufman
+93	Marla	Frazee
+94	Robert	Casilla
+95	Sal	Murdocca
+96	Kelly	Matthews
+97	Nichole	Matthews
+98	Zeke	Peña
+99	Melissa	Iwai
+100	Emily	McCully
+101	Suçie	Stevenson
+102	Mark	Teague
+103	Julie	Brinckloe
+104	Jaime	Kim
+105	Steven E.	Gordon
+106	Sandhya	Prabhat
+107	Tatjana	Mai-Wyss
+108	Joe	Lasker
+109	Kristina	Swarner
+110	Brett	Helquist
+111	Anne	Wilsdorf
+112	Dynamo	Limited
+113	Mike	Laughead
+114	Jannie	Ho
+115	Scott	Dawson
+116	Jared	Lee
+117	Val	Semeiks
+118	Frank	Morrison
+119	Barbara	Johansen Newman
+120	Rhode	Montijo
+121	Stéphane	Jorisch
+122	Robin	Preiss Glasser
+123	Ezra Jack	Keats
+124	Andy	Elkerton
+125	Judi	Abbot
+126	Nina	Mata
+127	Martha	Weston
+128	Marc	Simont
+129	Jessica	Meltzer
+130	Garth	Williams
+131	Ron	Brooks
+132	Rafael	López
+133	Mae	Besom
+134	Carole	Byard
+135	Keturah A.	Bobo
+136	Richard	Brown
+</IllustratorList>
