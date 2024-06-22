@@ -6556,24 +6556,26 @@
     ]
   },
   "packageFolders": {
-    "/home/moose/.nuget/packages/": {}
+    "C:\\Users\\moose\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/moose/Development/ClassroomLibrary/LibraryAPI/LibraryAPI.csproj",
+      "projectUniqueName": "C:\\Users\\moose\\Development\\ClassroomLibrary\\LibraryAPI\\LibraryAPI.csproj",
       "projectName": "LibraryAPI",
-      "projectPath": "/home/moose/Development/ClassroomLibrary/LibraryAPI/LibraryAPI.csproj",
-      "packagesPath": "/home/moose/.nuget/packages/",
-      "outputPath": "/home/moose/Development/ClassroomLibrary/LibraryAPI/obj/",
+      "projectPath": "C:\\Users\\moose\\Development\\ClassroomLibrary\\LibraryAPI\\LibraryAPI.csproj",
+      "packagesPath": "C:\\Users\\moose\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\moose\\Development\\ClassroomLibrary\\LibraryAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/moose/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\moose\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -6632,7 +6634,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
