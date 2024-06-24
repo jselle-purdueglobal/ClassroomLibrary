@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryAPI", "LibraryAPI\LibraryAPI.csproj", "{EE318915-D138-41F6-A175-1BEE84C11390}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryUI", "LibraryUI\LibraryUI.csproj", "{4EA6D6F9-9E5A-4374-8F16-0E075CD4386E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManager", "LibraryManager\LibraryManager.csproj", "{613FCDC1-2A38-43BA-9DAA-B6E53158ECC2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{EE318915-D138-41F6-A175-1BEE84C11390}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EE318915-D138-41F6-A175-1BEE84C11390}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EE318915-D138-41F6-A175-1BEE84C11390}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EA6D6F9-9E5A-4374-8F16-0E075CD4386E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EA6D6F9-9E5A-4374-8F16-0E075CD4386E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EA6D6F9-9E5A-4374-8F16-0E075CD4386E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EA6D6F9-9E5A-4374-8F16-0E075CD4386E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613FCDC1-2A38-43BA-9DAA-B6E53158ECC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613FCDC1-2A38-43BA-9DAA-B6E53158ECC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613FCDC1-2A38-43BA-9DAA-B6E53158ECC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613FCDC1-2A38-43BA-9DAA-B6E53158ECC2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -1,0 +1,35 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
+             Width="1024" Height="768"
+             x:Class="LibraryManager.Views.LoginView">
+                                <!--Login Screen-->
+    <Panel Background="#0D3A38">
+        <Border Margin="240,65"
+                Background="#C1D9D9"
+                CornerRadius="25">
+            <StackPanel>
+                <!--Heading-->
+                <TextBlock Classes="Heading"
+                           Text="Library Manager"
+                           HorizontalAlignment="Center"/>
+                
+                <!--Username Box-->
+                <TextBox Classes="LoginBox"
+                         Watermark="Username"/>
+                
+                <!--Password Box-->
+                <TextBox Classes="LoginBox"
+                         Watermark="Password"
+                         PasswordChar="*"/>
+                
+                <!--Login Button-->
+                <Button Classes="Button"
+                        Content="Login"
+                        Margin="0 50"/>
+            </StackPanel>
+        </Border>
+    </Panel>
+</UserControl>

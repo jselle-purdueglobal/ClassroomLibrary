@@ -1,6 +1,7 @@
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
+using LibraryAPI.Models;
 using LibraryAPI.Repositories;
 using LibraryAPI.Repositories.Implementations;
 using LibraryAPI.Repositories.Interfaces;
@@ -18,8 +19,10 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
 builder.Services.AddScoped<IBookService, BookService>();
-builder.Services.AddScoped<IAdminSettingsRepository, AdminSettingsRepository>();
-builder.Services.AddScoped<IAdminSettingsService, AdminSettingsService>();
+builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection("Jwt"));
 builder.Services.AddTransient<IDbConnection>(provider =>
     new SqlConnection(builder.Configuration.GetConnectionString("DefaultConnection")));
 

@@ -1,3 +1,5 @@
+using LibraryAPI.Models;
+using LibraryAPI.Repositories.Interfaces;
 using LibraryAPI.Services.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -6,20 +8,17 @@ namespace LibraryAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuthController(IAdminSettingsService adminSettingsService) : ControllerBase
+    public class AuthController(IAuthService authService) : ControllerBase
     {
-        [HttpPost("authenticate")]
-        public async Task<IActionResult> AuthenticateAdminPin([FromBody] string pin)
+        [HttpPost("login")]
+        public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var isValid = await adminSettingsService.AuthenticateAdminPin(pin);
-            return Ok(new { IsValid = isValid });
-        }
-
-        [HttpPut("update")]
-        public async Task<IActionResult> UpdateAdminPin([FromBody] string newPin)
-        {
-            await adminSettingsService.UpdateAdminPin(newPin);
-            return NoContent();
+            var token = await authService.AuthenticateAsync(loginDto.Username, loginDto.Password);
+            if (token == null)
+            {
+                return Unauthorized();
+            }
+            return Ok(new { Token = token });
         }
     }
 }
