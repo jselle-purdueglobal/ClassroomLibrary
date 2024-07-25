@@ -2,34 +2,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:LibraryManager.ViewModels"
              mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
-             Width="1024" Height="768"
-             x:Class="LibraryManager.Views.LoginView">
-                                <!--Login Screen-->
-    <Panel Background="#0D3A38">
-        <Border Margin="240,65"
-                Background="#C1D9D9"
-                CornerRadius="25">
+             x:Class="LibraryManager.Views.LoginView"
+             x:DataType="vm:LoginViewModel">
+
+    <UserControl.Styles>
+        <Style Selector="TextBlock.header">
+            <Setter Property="FontSize" Value="32"/>
+            <Setter Property="FontWeight" Value="Light"/>
+            <Setter Property="Margin" Value="0 0 0 40"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+        </Style>
+        <Style Selector="TextBox">
+            <Setter Property="Margin" Value="0 0 0 20"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="#2D2D30"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        <Style Selector="Button">
+            <Setter Property="Background" Value="#0078D4"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="20 10"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+    </UserControl.Styles>
+
+    <Grid RowDefinitions="Auto,*" Background="#1E1E1E">
+        <TextBlock Text="Library Manager" Classes="header" Margin="0 40 0 0"/>
+        
+        <Border Grid.Row="1" 
+                Background="#252526" 
+                Width="400" 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center"
+                Padding="40"
+                CornerRadius="8">
             <StackPanel>
-                <!--Heading-->
-                <TextBlock Classes="Heading"
-                           Text="Library Manager"
-                           HorizontalAlignment="Center"/>
+                <TextBlock Text="Login" Classes="header" Margin="0 0 0 20"/>
                 
-                <!--Username Box-->
-                <TextBox Classes="LoginBox"
-                         Watermark="Username"/>
+                <TextBox Watermark="Username" Text="{Binding Username}"/>
+                <TextBox Watermark="Password" PasswordChar="•" Text="{Binding Password}"/>
                 
-                <!--Password Box-->
-                <TextBox Classes="LoginBox"
-                         Watermark="Password"
-                         PasswordChar="*"/>
+                <Button Content="Login" Command="{Binding LoginCommand}" Margin="0 20 0 0"/>
                 
-                <!--Login Button-->
-                <Button Classes="Button"
-                        Content="Login"
-                        Margin="0 50"/>
+                <TextBlock Text="{Binding ErrorMessage}"
+                           Foreground="#FF3333"
+                           TextWrapping="Wrap"
+                           HorizontalAlignment="Center"
+                           Margin="0 20 0 0"/>
             </StackPanel>
         </Border>
-    </Panel>
+    </Grid>
 </UserControl>

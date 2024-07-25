@@ -471,3 +471,7 @@ C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsof
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\RestSharp.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

@@ -1,13 +1,14 @@
 USE ClassroomLibrary
-
--- Load Users
-INSERT INTO Users (Username, PasswordHash, UserRole) VALUES
-('kshishko', '$2a$11$hfeGgrsZV4iEkTsud9V50eh6uy5MxwhtmmAn4.bhuvgYqBZm4dv/K', 'Admin')
+GO
 
 -- Load Libraries
 INSERT INTO Libraries (LibraryCode, LibraryName) VALUES
 ('DPG997', 'Test Library'),
 ('UAE672', 'Ms. Shishko''s Library');
+
+-- Load Users
+INSERT INTO Users (Username, PasswordHash, UserRole, LibraryID) VALUES
+('kshishko', '$2a$11$hfeGgrsZV4iEkTsud9V50eh6uy5MxwhtmmAn4.bhuvgYqBZm4dv/K', 'Admin', 2)
 
 -- Load Authors
 INSERT INTO Authors (FirstName, LastName) VALUES

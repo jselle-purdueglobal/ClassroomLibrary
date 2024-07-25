@@ -1,0 +1,109 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:LibraryManager.ViewModels"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" 
+             d:DesignWidth="600" 
+             d:DesignHeight="400"
+             x:Class="LibraryManager.Views.StudentsView"
+             x:DataType="vm:StudentsViewModel">
+    
+    <!-- Design-time DataContext -->
+    <Design.DataContext>
+        <vm:StudentsViewModel/>
+    </Design.DataContext>
+
+    <!-- Main Layout -->
+    <Grid Margin="20" 
+          RowDefinitions="Auto,Auto,Auto,*">
+        
+        <!-- Header -->
+        <TextBlock Text="Students" 
+                   Classes="header"/>
+
+        <!-- Action Buttons -->
+        <StackPanel Grid.Row="1"
+                    HorizontalAlignment="Right"
+                    Margin="0 0 0 20"
+                    Orientation="Horizontal"
+                    Spacing="8">
+            
+            <!-- Delete Button -->
+            <Button Command="{Binding DeleteAllCommand}"
+                    Background="{DynamicResource ErrorBrush}">
+                <StackPanel Orientation="Horizontal" 
+                            Spacing="8">
+                    <ui:SymbolIcon Symbol="Delete"/>
+                    <TextBlock Text="Delete"/>
+                </StackPanel>
+            </Button>
+            
+            <!-- Add Student Button -->
+            <Button Command="{Binding AddStudentCommand}"
+                    Background="{DynamicResource SuccessBrush}">
+                <StackPanel Orientation="Horizontal" 
+                            Spacing="8">
+                    <ui:SymbolIcon Symbol="AddFriend"/>
+                    <TextBlock Text="Add Student"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+        
+        <!-- Column Headers -->
+        <Grid Grid.Row="2" 
+              ColumnDefinitions="3*,3*,*" 
+              Margin="0 0 0 10">
+            <TextBlock Text="First Name" 
+                       FontWeight="Bold"/>
+            <TextBlock Text="Last Name" 
+                       FontWeight="Bold" 
+                       Grid.Column="1"/>
+            <TextBlock Text="Actions" 
+                       FontWeight="Bold" 
+                       Grid.Column="2"/>
+        </Grid>
+
+        <!-- StudentItem Template -->
+        <ItemsControl Grid.Row="3" 
+                      ItemsSource="{Binding StudentItems}">
+            <ItemsControl.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderBrush="#333333" 
+                            BorderThickness="0 0 0 1" 
+                            Padding="0 10">
+                        <Grid ColumnDefinitions="3*,3*,*">
+                            
+                            <!-- Names -->
+                            <TextBlock Text="{Binding  Student.FirstName}"/>
+                            <TextBlock Text="{Binding Student.LastName}" 
+                                       Grid.Column="1"/>
+                            
+                            <!-- Action Buttons -->
+                            <StackPanel Orientation="Horizontal" 
+                                        Grid.Column="2" 
+                                        Spacing="5">
+                                
+                                <!-- Edit Button -->
+                                <Button Command="{Binding $parent[UserControl].((vm:StudentsViewModel)DataContext).EditStudentCommand, FallbackValue={x:Null}}"
+                                        CommandParameter="{Binding}">
+                                    <ui:SymbolIcon Symbol="Edit"/>
+                                </Button>
+                                
+                                <!-- Delete Button -->
+                                <Button Classes.DeleteButtonOn="{Binding IsMarkedForDeletion}"
+                                        Classes.DeleteButtonOff="{Binding !IsMarkedForDeletion}"
+                                        Command="{Binding $parent[UserControl].((vm:StudentsViewModel)DataContext).ToggleDeleteCommand, FallbackValue={x:Null}}"
+                                        CommandParameter="{Binding}">
+                                    <ui:SymbolIcon Symbol="Delete"/>
+                                </Button>
+                                
+                            </StackPanel>
+                        </Grid>
+                    </Border>
+                </DataTemplate>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+    </Grid>
+</UserControl>

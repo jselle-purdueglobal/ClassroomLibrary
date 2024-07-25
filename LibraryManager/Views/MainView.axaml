@@ -1,0 +1,63 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="using:LibraryManager.ViewModels"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:ui="using:FluentAvalonia.UI.Controls"
+             mc:Ignorable="d" d:DesignWidth="1024" d:DesignHeight="768"
+             Width="1024" Height="768"
+             x:Class="LibraryManager.Views.MainView"
+             xmlns:views="using:LibraryManager.Views"
+             x:DataType="vm:MainViewModel">
+
+    <!-- Resolve Views -->
+    <UserControl.DataTemplates>
+        <DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+            <views:DashboardView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:BooksViewModel}">
+            <views:BooksView />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:StudentsViewModel}">
+            <views:StudentsView />
+        </DataTemplate>
+    </UserControl.DataTemplates>
+    
+    <!-- NavigationView -->
+    <ui:NavigationView x:Name="NavView"
+                       PaneDisplayMode="Left"
+                       IsSettingsVisible="False"
+                       OpenPaneLength="200"
+                       IsPaneOpen="True"
+                       SelectedItem="{Binding SelectedMenuItem}">
+        <!-- Menu Items-->
+        <ui:NavigationView.MenuItems>
+            <!-- Home -->
+            <ui:NavigationViewItem Content="Dashboard"
+                                   Tag="Dashboard"
+                                   IconSource="Home"/>
+            <!-- Books -->
+            <ui:NavigationViewItem Content="Books"
+                                   Tag="Books"
+                                   IconSource="Library"/>
+            <!-- Students -->
+            <ui:NavigationViewItem Content="Students"
+                                   Tag="Students"
+                                   IconSource="People"/>
+        </ui:NavigationView.MenuItems>
+        
+        <!-- Footer Items -->
+        <ui:NavigationView.FooterMenuItems>
+            <!-- Settings -->
+            <ui:NavigationViewItem Content="Settings"
+                                   Tag="Settings"
+                                   IconSource="Settings"/>
+        </ui:NavigationView.FooterMenuItems>
+        
+        <!-- Content -->
+        <ui:NavigationView.Content>
+            <ContentControl Content="{Binding CurrentViewModel}"/>
+        </ui:NavigationView.Content>
+        
+    </ui:NavigationView>
+</UserControl>
