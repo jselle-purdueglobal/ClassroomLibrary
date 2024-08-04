@@ -1,0 +1,43 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:vm="using:LibraryCatalog.ViewModels"
+             x:DataType="vm:CatalogViewModel"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             
+             x:Class="LibraryCatalog.Views.CheckInDialog">
+    <StackPanel Orientation="Horizontal">
+        <Border>
+            <StackPanel Width="260">
+                <Image Source="{Binding SelectedCheckInBook.ImagePath, Converter={StaticResource PathToBookCoverConverter}, Mode=TwoWay}"
+                       Width="200" Height="200" 
+                       Stretch="Uniform"
+                       Margin="0,0,0,10"/>
+                <TextBlock Text="{Binding SelectedCheckInBook.Title}"
+                           FontWeight="Bold"
+                           TextWrapping="Wrap"
+                           MaxLines="2"
+                           TextTrimming="CharacterEllipsis"/>
+                <TextBlock Text="{Binding SelectedCheckInBook.Authors}"
+                           TextWrapping="Wrap"
+                           MaxLines="2"
+                           TextTrimming="CharacterEllipsis"/>
+                <TextBlock Text="{Binding SelectedCheckInBook.Illustrators}"
+                           TextWrapping="Wrap"
+                           MaxLines="1"
+                           TextTrimming="CharacterEllipsis"/>
+            </StackPanel>
+        </Border>
+        <ComboBox ItemsSource="{Binding AvailableStudents}"
+                  SelectedItem="{Binding SelectedCheckInStudent, Mode=TwoWay}"
+                  Width="200"
+                  PlaceholderText="Select a student">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding FullName}" />
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+    </StackPanel>
+</UserControl>

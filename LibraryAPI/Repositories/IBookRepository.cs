@@ -4,5 +4,5 @@ namespace LibraryAPI.Repositories.Interfaces;
 
 public interface IBookRepository
 {
-    Task<IEnumerable<Book>> GetBookListAsync();
+    Task<IEnumerable<Book>> GetBooksAsync();
 }

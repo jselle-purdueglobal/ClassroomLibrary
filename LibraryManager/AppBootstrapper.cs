@@ -1,8 +1,5 @@
 using System;
-using System.IdentityModel.Tokens.Jwt;
-using System.Linq;
 using System.Reactive.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using LibraryManager.Extensions;
 using LibraryManager.Services;
@@ -17,8 +14,6 @@ namespace LibraryManager
         public RoutingState Router { get; }
         private readonly IAuthService _authService;
         private readonly IServiceProvider _serviceProvider;
-        private readonly UserContext _userContext;
-        private IApiClient _apiClient;
 
         public AppBootstrapper()
         {
@@ -27,8 +22,6 @@ namespace LibraryManager
             services.AddCommonServices(this);
             _serviceProvider = services.BuildServiceProvider();
             _authService = _serviceProvider.GetRequiredService<IAuthService>();
-            _userContext = _serviceProvider.GetRequiredService<UserContext>();
-            _apiClient = _serviceProvider.GetRequiredService<IApiClient>();
 
             InitializeAsync();
         }

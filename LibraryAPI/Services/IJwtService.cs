@@ -4,5 +4,6 @@ namespace LibraryAPI.Services;
 
 public interface IJwtService
 {
-    string? GenerateToken(User user);
+    string? GenerateUserToken(User user);
+    Task<string?> GenerateLibraryToken(string libraryCode);
 }

@@ -36,10 +36,11 @@
             <ui:NavigationViewItem Content="Dashboard"
                                    Tag="Dashboard"
                                    IconSource="Home"/>
-            <!-- Books -->
+            <!-- Books
             <ui:NavigationViewItem Content="Books"
                                    Tag="Books"
                                    IconSource="Library"/>
+            -->
             <!-- Students -->
             <ui:NavigationViewItem Content="Students"
                                    Tag="Students"

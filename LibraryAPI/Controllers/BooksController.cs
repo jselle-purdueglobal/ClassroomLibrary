@@ -4,14 +4,14 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace LibraryAPI.Controllers;
 
-[Route("api/[controller]")]
 [ApiController]
+[Route("api/[controller]")]
 public class BooksController(IBookService bookService) : ControllerBase
 {
     [HttpGet]
-    public async Task<IActionResult> GetAllBooks()
+    public async Task<IActionResult> GetBooks()
     {
-        var bookList = await bookService.GetBooksAsync();
-        return Ok(bookList);
+        var books = await bookService.GetBooksAsync();
+        return Ok(books);
     }
 }

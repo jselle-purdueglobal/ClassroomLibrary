@@ -52,14 +52,14 @@ public class StudentsController(IStudentService studentService) : ControllerBase
             return BadRequest("No student IDs provided");
         }
 
-        var deletedCount = await studentService.DeleteStudentsAsync(studentIds);
-        
-        if (deletedCount == 0)
+        var result = await studentService.DeleteStudentsAsync(studentIds);
+        var studentCount = studentIds.Count; 
+        if (result)
         {
             return NotFound("No students were found with the provided IDs");
         }
 
-        return Ok(new { DeletedCount = deletedCount, Message = $"Successfully deleted {deletedCount} student(s)" });
+        return Ok($"Successfully deleted {studentCount} student(s)");
     }
     
     // Add Student

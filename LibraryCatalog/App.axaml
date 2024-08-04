@@ -1,0 +1,34 @@
+<Application xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             x:Class="LibraryCatalog.App"
+             xmlns:converters="using:LibraryCatalog.Converters"
+             xmlns:styling="clr-namespace:FluentAvalonia.Styling;assembly=FluentAvalonia"
+             RequestedThemeVariant="Default">
+             <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
+
+   <Application.Styles>
+       <styling:FluentAvaloniaTheme />
+        
+        
+        <Style Selector="Button.Link">
+            <Setter Property="Background" Value="#4CAF50"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="20 10"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+        
+        <Style Selector="TextBox">
+            <Setter Property="Margin" Value="0 0 0 20"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Background" Value="#2D2D30"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+    </Application.Styles>
+             
+    <Application.Resources>
+        <converters:PathToBookCoverConverter x:Key="PathToBookCoverConverter"/>
+    </Application.Resources>
+</Application>

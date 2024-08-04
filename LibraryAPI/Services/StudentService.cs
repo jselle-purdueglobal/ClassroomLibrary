@@ -18,9 +18,17 @@ public class StudentService(IStudentRepository studentRepository) : IStudentServ
     }
 
     // Delete Students
-    public async Task<int> DeleteStudentsAsync(IEnumerable<int> studentIds)
+    public async Task<bool> DeleteStudentsAsync(List<int> studentIds)
     {
-        return await studentRepository.DeleteStudentsAsync(studentIds);
+        var totalDeleteRequests = studentIds.Count;
+        var totalDeleted = 0;
+        foreach (var studentId in studentIds)
+        {
+            var result = await studentRepository.DeleteStudentAsync(studentId);
+            if (result) totalDeleted++;
+        }
+
+        return totalDeleted == totalDeleteRequests;
     }
     
     // Add Student

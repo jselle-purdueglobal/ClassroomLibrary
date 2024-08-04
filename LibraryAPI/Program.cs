@@ -45,7 +45,11 @@ builder.Services.AddSwaggerGen(c =>
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<IBookRepository, BookRepository>();
+builder.Services.AddScoped<ILibraryRepository, LibraryRepository>();
+builder.Services.AddScoped<ILibraryService, LibraryService>();
 builder.Services.AddScoped<IBookService, BookService>();
+builder.Services.AddScoped<ICheckoutRepository, CheckoutRepository>();
+builder.Services.AddScoped<ICheckoutService, CheckoutService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<IStudentRepository, StudentRepository>();

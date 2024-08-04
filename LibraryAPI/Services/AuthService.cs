@@ -1,11 +1,13 @@
 using System.Security.Cryptography;
 using LibraryAPI.Models;
 using LibraryAPI.Repositories.Interfaces;
+using NuGet.Common;
 
 namespace LibraryAPI.Services;
 
 public class AuthService(IUserRepository userRepository, IJwtService jwtService, IConfiguration configuration) : IAuthService
 {
+    // Authenticate
     public async Task<AuthResult?> AuthenticateAsync(string username, string password)
     {
         var user = await userRepository.GetUserAsync(username);
@@ -14,7 +16,7 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService,
             return null;
         }
 
-        var token = jwtService.GenerateToken(user);
+        var token = jwtService.GenerateUserToken(user);
         var refreshToken = GenerateRefreshToken();
         var refreshTokenExpiryTime = DateTime.UtcNow.AddDays(GetRefreshTokenExpiryDays());
 
@@ -28,6 +30,7 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService,
         };
     }
 
+    // Refresh Token
     public async Task<AuthResult?> RefreshTokenAsync(string refreshToken)
     {
         var user = await userRepository.GetUserByRefreshTokenAsync(refreshToken);
@@ -36,7 +39,7 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService,
             return null;
         }
 
-        var token = jwtService.GenerateToken(user);
+        var token = jwtService.GenerateUserToken(user);
         var newRefreshToken = GenerateRefreshToken();
         var refreshTokenExpiryTime = DateTime.UtcNow.AddDays(GetRefreshTokenExpiryDays());
 
@@ -50,6 +53,7 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService,
         };
     }
 
+    // Generate Refresh Token
     private static string GenerateRefreshToken()
     {
         var randomNumber = new byte[64];
@@ -63,10 +67,13 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService,
         return Convert.ToBase64String(SHA256.HashData(combinedBytes));
     }
 
+    // Get Refresh Token Expiration
     private int GetRefreshTokenExpiryDays()
     {
-        return configuration.GetValue<int>("RefreshTokenExpiryDays", 7);  // Default to 7 days if not specified
+        return configuration.GetValue("RefreshTokenExpiryDays", 7);  // Default to 7 days if not specified
     }
+    
+    // Reset Password
     public async Task<bool> ResetPasswordAsync(string username, string newPassword)
     {
         var user = await userRepository.GetUserAsync(username);
@@ -77,5 +84,11 @@ public class AuthService(IUserRepository userRepository, IJwtService jwtService,
 
         var newPasswordHash = BCrypt.Net.BCrypt.HashPassword(newPassword);
         return await userRepository.UpdatePasswordAsync(username, newPasswordHash);
+    }
+    
+    // Link Library
+    public async Task<string?> LinkLibrary(string libraryCode)
+    {
+        return await jwtService.GenerateLibraryToken(libraryCode);
     }
 }

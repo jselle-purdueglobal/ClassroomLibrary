@@ -34,24 +34,14 @@ public class StudentRepository(IDbConnection connection) : IStudentRepository
     }
     
     // Delete Students
-    public async Task<int> DeleteStudentsAsync(IEnumerable<int> studentIds)
+    public async Task<bool> DeleteStudentAsync(int studentId)
     {
-        var dataTable = new DataTable();
-        dataTable.Columns.Add("Value", typeof(int));
-        foreach (var id in studentIds)
-        {
-            dataTable.Rows.Add(id);
-        }
-
-        var parameter = new DynamicParameters();
-        parameter.Add("@StudentIds", dataTable.AsTableValuedParameter("IntList"));
-        
         var result = await connection.ExecuteScalarAsync<int>(
-            "spDeleteStudents",
-            parameter,
+            "spDeleteStudent",
+            new { StudentId = studentId },
             commandType: CommandType.StoredProcedure);
         
-        return result;
+        return result == 1;
     }
 
     // Add Student

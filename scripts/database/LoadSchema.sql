@@ -13,7 +13,8 @@ CREATE TABLE Students (
     StudentID INT PRIMARY KEY IDENTITY,
     FirstName VARCHAR(50) NOT NULL,
     LastName VARCHAR(50) NOT NULL,
-	LibraryID INT FOREIGN KEY REFERENCES Libraries(LibraryID)
+	LibraryID INT FOREIGN KEY REFERENCES Libraries(LibraryID),
+	IsArchived BIT NOT NULL DEFAULT 0
 );
 
 CREATE TABLE Genres (
@@ -38,7 +39,8 @@ CREATE TABLE Books (
     Title VARCHAR(255) NOT NULL,
     BookType VARCHAR(20) NOT NULL CHECK (BookType IN ('Informational', 'Fiction')),
     ISBN VARCHAR(20),
-    GenreID INT FOREIGN KEY REFERENCES Genres(GenreID)
+    GenreID INT FOREIGN KEY REFERENCES Genres(GenreID),
+    ImagePath VARCHAR(255)
 );
 
 CREATE TABLE LibraryBooks (
@@ -79,11 +81,4 @@ CREATE TABLE Users (
     RefreshToken VARCHAR(255),
     RefreshTokenExpiryTime DATETIME,
     LibraryID INT FOREIGN KEY REFERENCES Libraries(LibraryID)
-);
-
---Data Types
-
-CREATE TYPE IntList AS TABLE
-(
-    Value INT NOT NULL PRIMARY KEY
 );

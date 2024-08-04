@@ -238,8 +238,10 @@ C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\LibraryA
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\LibraryAPI.runtimeconfig.json
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\LibraryAPI.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\LibraryAPI.pdb
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Dapper.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Humanizer.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.OpenApi.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
@@ -258,6 +260,12 @@ C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsof
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.DiaSymReader.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.NET.StringTools.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
@@ -279,6 +287,7 @@ C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\NuGet.Pa
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\NuGet.ProjectModel.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\NuGet.Protocol.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\NuGet.Versioning.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\RestSharp.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -291,6 +300,7 @@ C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.C
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.Data.SqlClient.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.Reflection.MetadataLoadContext.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.Security.Permissions.dll
@@ -465,13 +475,3 @@ C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\obj\Debug\net8.0\refint\L
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\obj\Debug\net8.0\LibraryAPI.pdb
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\obj\Debug\net8.0\LibraryAPI.genruntimeconfig.cache
 C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\obj\Debug\net8.0\ref\LibraryAPI.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\RestSharp.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\moose\Development\ClassroomLibrary\LibraryAPI\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll

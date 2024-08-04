@@ -3,35 +3,41 @@ using Dapper;
 using LibraryAPI.Models;
 using LibraryAPI.Repositories.Interfaces;
 
-namespace LibraryAPI.Repositories.Implementations;
+namespace LibraryAPI.Repositories;
 
 public class BookRepository(IDbConnection connection) : IBookRepository
 {
-    public async Task<IEnumerable<Book>> GetBookListAsync()
+    public async Task<IEnumerable<Book>> GetBooksAsync()
     {
         using (connection)
         {
-            var lookup = new Dictionary<int, Book>();
+            var bookDictionary = new Dictionary<int, Book>();
 
-            var books = (await connection.QueryAsync<Book, Author, Book>(
-                "GetBookList",
-                (book, author) =>
+            await connection.QueryAsync<Book, Author, Illustrator?, Book>(
+                "spGetBooks",
+                (book, author, illustrator) =>
                 {
-                    if (!lookup.TryGetValue(book.BookId, out var existingBook))
+                    if (!bookDictionary.TryGetValue(book.BookId, out var bookEntry))
                     {
-                        existingBook = book;
-                        existingBook.Authors = new List<Author>();
-                        lookup.Add(existingBook.BookId, existingBook);
+                        bookEntry = book;
+                        bookEntry.AuthorList = new List<Author>();
+                        bookEntry.IllustratorList = new List<Illustrator>();
+                        bookDictionary.Add(bookEntry.BookId, bookEntry);
                     }
 
-                    existingBook.Authors.Add(author);
-                    return existingBook;
+                    if (bookEntry.AuthorList.All(a => a.AuthorId != author.AuthorId))
+                        bookEntry.AuthorList.Add(author);
+                    
+                    if (illustrator != null && bookEntry.IllustratorList.All(i => i.IllustratorId != illustrator.IllustratorId))
+                        bookEntry.IllustratorList.Add(illustrator);
+
+                    return bookEntry;
                 },
-                splitOn: "AuthorID",
-                commandType: CommandType.StoredProcedure
-            )).Distinct().ToList();
-            
-            return books;
+                commandType: CommandType.StoredProcedure,
+                splitOn: "AuthorId,IllustratorId"
+            );
+
+            return bookDictionary.Values;
         }
     }
 }

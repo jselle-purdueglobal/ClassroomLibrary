@@ -9,6 +9,7 @@ namespace LibraryAPI.Controllers
     [ApiController]
     public class AuthController(IAuthService authService) : ControllerBase
     {
+        // Login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto loginDto)
         {
@@ -20,6 +21,7 @@ namespace LibraryAPI.Controllers
             return Ok(result);
         }
         
+        // Refresh
         [HttpPost("refresh")]
         public async Task<IActionResult> Refresh([FromBody] string refreshToken)
         {
@@ -31,6 +33,7 @@ namespace LibraryAPI.Controllers
             return Ok(result);
         }
         
+        // Reset Password
         [Authorize]
         [HttpPost("reset-password")]
         public async Task<IActionResult> ResetPassword([FromBody] PasswordResetDto resetDto)
@@ -49,5 +52,18 @@ namespace LibraryAPI.Controllers
             }
             return BadRequest(new { Message = "Failed to reset password" });
         }
+        
+        // Link Library
+        [HttpPost("link")]
+        public async Task<IActionResult> LinkLibrary([FromBody] LibraryCodeDto libraryCode)
+        {
+            var result = await authService.LinkLibrary(libraryCode.LibraryCode);
+            if (result == null)
+            {
+                return BadRequest(result);
+            }
+            return Ok(result);
+        }
+            
     }
 }
